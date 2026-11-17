@@ -19,5 +19,5 @@ def inverse_2x2(matrix: list[list[float]]) -> list[list[float]] | None:
             if i == j:
                 result[i][j] = d/det if i == 0 else a/det
             else:
-                result[i][j] = -(b/det) if i == 0 else -(c/det)
+                result[i][j] = (-b/det) if i == 0 else (-c/det)
     return result
